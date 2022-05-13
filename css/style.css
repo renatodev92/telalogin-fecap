@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #24604f;
+
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.textfield>input {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffff;
+    color: #444444;
+    font-size: 12pt;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+
+.textfield>a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 800;
+}
+
+.textfield>a:hover {
+    color: #0def7d;
+}
+
+.textfield>h1 {
+    font-size: 2vw;
+}
+
+.btn-login {
+    width: 80%;
+    margin: 20px 0;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: #0faa75;
+    color: #ffff;
+}
+
+
+.btn-login:hover {
+    background-color: #0def7d;
+    color: #444444;
+}
+
+
+
+
+/*Quando a tela for menor que 960px execute o código a seguir.*/
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+    }
+
+    .textfield>h1 {
+        font-size: 20px;
+    }
+}
